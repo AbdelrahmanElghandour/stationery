@@ -1,0 +1,101 @@
+[
+  {
+    "id": "fountain-pen",
+    "name": "Fountain Pen",
+    "category": "Pens",
+    "price_retail": 5,
+    "price_wholesale": 50,
+    "quantity": 100,
+    "image": "images/fountain.webp"
+  },
+  {
+    "id": "notebook",
+    "name": "Premium Notebook - A5 Dot Grid",
+    "category": "Notebooks",
+    "price_retail": 3,
+    "price_wholesale": 30,
+    "quantity": 100,
+    "image": "images/premium_notebook.webp"
+  },
+  {
+    "id": "markers",
+    "name": "Art Markers Set - 12 Colors",
+    "category": "Art Supplies",
+    "price_retail": 10.00,
+    "price_wholesale": 105.00,
+    "quantity": 100,
+    "image": "images/art_markers.webp"
+  },
+  {
+    "id": "organizer",
+    "name": "Desk Organizer - Bamboo",
+    "category": "Stationery",
+    "price_retail": 25.00,
+    "price_wholesale": 18.99,
+    "quantity": 100,
+    "image": "images/desk_org.webp"
+  },
+  {
+    "id": "ink",
+    "name": "Ink Refill - Blue",
+    "category": "Pens",
+    "price_retail": 5.00,
+    "price_wholesale": 55.00,
+    "quantity": 100,
+    "image": "images/ink.jpg"
+  },
+  {
+    "id": "sticker",
+    "name": "Decorative Sticker Set",
+    "category": "Art Supplies",
+    "price_retail": 2.5,
+    "price_wholesale": 25.00,
+    "quantity": 100,
+    "image": "images/sticker.jfif"
+  },
+  {
+    "id": "pen_case",
+    "name": "Leather Pen Case",
+    "category": "Pens",
+    "price_retail": 5.00,
+    "price_wholesale": 55.00,
+    "quantity": 100,
+    "image": "images/leather.webp"
+  },
+  {
+    "id": "artist",
+    "name": "Artist sketchbook",
+    "category": "Notebooks",
+    "price_retail": 12.99,
+    "price_wholesale": 120.00,
+    "quantity": 100,
+    "image": "images/artist.webp"
+  },
+  {
+    "id": "pwater",
+    "name": "Watercolor Paint Set",
+    "category": "Art Supplies",
+    "price_retail": 15.00,
+    "price_wholesale": 160.00,
+    "quantity": 100,
+    "image": "images/artist.webp"
+  },
+  {
+    "id": "mat",
+    "name": "Leather Desk Mat",
+    "category": "Stationery",
+    "price_retail": 25.00,
+    "price_wholesale": 280.00,
+    "quantity": 100,
+    "image": "images/artist.webp"
+  },
+  {
+    "id": "holder",
+    "name": "Wooden Pen Holder",
+    "category": "Stationery",
+    "price_retail": 10.00,
+    "price_wholesale": 105.00,
+    "quantity": 100,
+    "image": "images/artist.webp"
+  }
+]
