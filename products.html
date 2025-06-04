@@ -48,33 +48,28 @@
 <body>
   <!-- Navigation Bar -->
 <nav class="navbar">
-    <div class="logo">
-      <h1>Stationery Haven</h1>
+  <div class="logo">
+    <h1>Stationery Haven</h1>
+  </div>
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="index.html" class="${window.location.pathname.includes('index.html') ? 'active' : ''}">Home</a></li>
+      <li><a href="products.html" class="${window.location.pathname.includes('products.html') ? 'active' : ''}">Products</a></li>
+      <li><a href="offers.html" class="${window.location.pathname.includes('offers.html') ? 'active' : ''}">Offers</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="cart.html" class="${window.location.pathname.includes('cart.html') ? 'active' : ''}">Cart</a></li>
+      <li><a href="signup.html" class="${window.location.pathname.includes('signup.html') ? 'active' : ''}">Sign Up</a></li>
+      <li><a href="login.html" class="${window.location.pathname.includes('login.html') ? 'active' : ''}">Login</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search products...">
+      <button id="search-button">🔍</button>
     </div>
-    <div class="nav-container">
-      <button class="menu-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Offers</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Cart</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-      <div class="search-bar">
-        <input type="text" id="search-input" placeholder="🔍">
-        <button id="search-button">Search</button>
-      </div>
-      <div class="cart-icon">
-        <a href="#">🛒 <span id="cart-count">0</span></a>
-      </div>
+    <div class="cart-icon">
+      <a href="cart.html">🛒 <span id="cart-count">0</span></a>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Main Content with Sidebar and Products -->
   <div class="main-content">
