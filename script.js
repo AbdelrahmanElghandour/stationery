@@ -88,8 +88,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Navbar Toggle Functionality
+  function setupNavbarToggle() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+    } else {
+      console.warn('Menu toggle or nav links not found');
+    }
+  }
+
   updateNavbar();
   updateCartCount();
+  setupNavbarToggle();
 
   // Profile Page
   const profilePage = document.querySelector('.profile-page');
@@ -525,19 +541,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function handleCartClick() {
-  const id = this.dataset.id;
-  const name = this.dataset.product;
-  const price = parseFloat(this.dataset.price);
-  const page = window.location.pathname;
-  if (!id || !name || isNaN(price)) {
-    const errors = [];
-    if (!id) errors.push('missing data-id');
-    if (!name) errors.push('missing data-product');
-    if (isNaN(price)) errors.push(`invalid data-price: "${this.dataset.price}"`);
-    console.error(`Invalid cart item on ${page}:`, { id, name, price, errors });
-    alert(`Error adding product to cart on ${page}. Issues: ${errors.join(', ')}. Please check the product details.`);
-    return;
-  }
+    const id = this.dataset.id;
+    const name = this.dataset.product;
+    const price = parseFloat(this.dataset.price);
+    const page = window.location.pathname;
+    if (!id || !name || isNaN(price)) {
+      const errors = [];
+      if (!id) errors.push('missing data-id');
+      if (!name) errors.push('missing data-product');
+      if (isNaN(price)) errors.push(`invalid data-price: "${this.dataset.price}"`);
+      console.error(`Invalid cart item on ${page}:`, { id, name, price, errors });
+      alert(`Error adding product to cart on ${page}. Issues: ${errors.join(', ')}. Please check the product details.`);
+      return;
+    }
 
     let discount = null;
     if (window.location.pathname.includes('offers.html')) {
@@ -569,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (timerElement) {
     const offersGrid = document.querySelector('#offers-grid');
     const offersExpired = document.querySelector('#offers-expired');
-    const endDate = new Date('2025-12-27T23:59:59+09:00').getTime();
+    const endDate = new Date('2025-06-05T23:59:59+09:00').getTime();
 
     function updateTimer() {
       const now = new Date().getTime();
