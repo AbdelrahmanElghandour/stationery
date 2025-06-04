@@ -863,281 +863,80 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* General Layout Adjustments */
   .main-content {
     flex-direction: column;
-    margin: 10px; /* Reduce margin for smaller screens */
-    gap: 10px; /* Reduce gap between sidebar and product grid */
   }
-
   .sidebar,
   .product-grid {
     width: 100%;
   }
-
-  /* Navigation Adjustments */
-  .navbar {
-    padding: 10px; /* Reduce padding for mobile */
-  }
-
   .nav-container {
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px; /* Reduce gap between elements */
   }
-
   .nav-links {
     flex-direction: column;
     align-items: flex-end;
   }
-
   .nav-links li {
-    margin: 5px 0; /* Reduce spacing between nav items */
+    margin: 10px 0;
   }
-
   .search-bar {
-    margin-top: 5px;
-    width: 100%; /* Ensure search bar takes full width */
+    margin-top: 10px;
   }
-
-  #search-input {
-    width: 100%; /* Full width for search input */
-    font-size: 12px; /* Smaller font for mobile */
-  }
-
-  #search-button {
-    padding: 8px; /* Adjust padding */
-    font-size: 12px;
-  }
-
   .cart-icon {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 0;
   }
-
-  /* Product Grid Adjustments */
-  .products {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller min width for mobile */
-    gap: 10px; /* Reduce gap between cards */
-    grid-auto-rows: 300px; /* Reduce row height for mobile */
-  }
-
-  .product-card {
-    height: 300px; /* Reduce height for mobile */
-    max-height: 300px;
-    padding: 10px; /* Reduce padding */
-  }
-
-  .product-card img {
-    max-height: 150px; /* Scale down image height for mobile */
-  }
-
-  .product-card h3 {
-    font-size: 16px; /* Smaller font for mobile */
-    min-height: 36px; /* Adjust for smaller font */
-    -webkit-line-clamp: 2;
-  }
-
-  .product-card p {
-    font-size: 14px; /* Smaller font for price */
-  }
-
-  .add-to-cart {
-    padding: 8px; /* Smaller button padding */
-    font-size: 14px;
-  }
-
-  /* Sidebar Adjustments */
-  .sidebar {
-    max-height: 300px; /* Match product card height */
-    padding: 10px; /* Reduce padding */
-  }
-
-  .sidebar h3 {
-    font-size: 18px; /* Smaller heading */
-  }
-
-  .sidebar a {
-    padding: 5px 0; /* Reduce padding */
-    font-size: 14px; /* Smaller font */
-  }
-
-  /* Carousel Adjustments */
-  .carousel {
-    max-width: 100%; /* Ensure it fits the screen */
-  }
-
-  .carousel-slide img {
-    max-height: 200px; /* Limit image height */
-    object-fit: cover; /* Ensure image fits without distortion */
-  }
-
-  .carousel-caption {
-    font-size: 12px; /* Smaller caption */
-    padding: 5px;
-    bottom: 10px;
-    left: 10px;
-  }
-
-  .carousel-prev,
-  .carousel-next {
-    padding: 5px; /* Smaller buttons */
-    font-size: 14px;
-  }
-
-  /* Welcome Banner Adjustments */
-  .welcome-banner {
-    padding: 20px 10px; /* Reduce padding */
-  }
-
-  .welcome-banner h2 {
-    font-size: 24px; /* Smaller heading */
-  }
-
-  .welcome-banner p {
-    font-size: 14px; /* Smaller text */
-  }
-
-  .cta-button {
-    padding: 8px 15px; /* Smaller button */
-    font-size: 14px;
-  }
-
-  /* Product Details Adjustments */
   .product-container {
     flex-direction: column;
   }
-
   .product-image,
   .product-info {
     width: 100%;
   }
-
-  .product-info h1 {
-    font-size: 22px; /* Smaller heading */
-  }
-
-  .product-price {
-    font-size: 18px; /* Smaller price */
-  }
-
-  .product-description {
-    font-size: 14px; /* Smaller description */
-  }
-
-  /* Cart Page Adjustments */
   .cart-table {
-    font-size: 12px; /* Even smaller font */
+    font-size: 14px;
   }
-
   .cart-table th,
   .cart-table td {
-    padding: 5px; /* Reduce padding */
+    padding: 8px;
   }
-
   .quantity-controls input {
-    width: 30px; /* Smaller input */
-    font-size: 12px;
+    width: 40px;
   }
-
-  .quantity-controls button {
-    padding: 3px 8px; /* Smaller buttons */
-  }
-
-  .remove-button {
-    padding: 3px 8px;
-    font-size: 12px;
-  }
-
   .cart-total,
   .cart-actions {
     text-align: center;
   }
-
   .cart-actions {
     flex-direction: column;
     gap: 10px;
   }
-
-  #checkout-button,
+  .checkout-button,
   #empty-cart-button {
     width: 100%;
     max-width: 200px;
-    padding: 8px;
-    font-size: 14px;
   }
-
-  /* Checkout Page Adjustments */
   .checkout-container {
     flex-direction: column;
   }
-
   .checkout-form,
   .order-summary {
     width: 100%;
   }
-
-  .checkout-form h3,
-  .order-summary h3 {
-    font-size: 18px; /* Smaller headings */
-  }
-
-  #checkout-form .form-group input {
-    font-size: 12px; /* Smaller input text */
-  }
-
-  #pay-button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .summary-table th,
-  .summary-table td {
-    padding: 5px;
-    font-size: 12px;
-  }
-
-  /* Profile Page Adjustments */
   .profile-container {
     flex-direction: column;
   }
-
   .user-info,
   .order-history {
     width: 100%;
   }
-
-  .user-info h3,
-  .order-history h3 {
-    font-size: 18px; /* Smaller headings */
-  }
-
-  .user-info p {
-    font-size: 14px; /* Smaller text */
-  }
-
   .orders-table {
-    font-size: 12px; /* Smaller font */
+    font-size: 14px;
   }
-
   .orders-table th,
   .orders-table td {
-    padding: 5px; /* Reduce padding */
-  }
-
-  .toggle-items {
-    font-size: 12px; /* Smaller text */
-  }
-
-  .items-details-table th,
-  .items-details-table td {
-    padding: 5px;
-    font-size: 12px;
-  }
-
-  /* Footer Adjustments */
-  footer {
-    padding: 10px; /* Reduce padding */
-    font-size: 14px; /* Smaller text */
+    padding: 8px;
   }
 }
