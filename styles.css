@@ -863,80 +863,291 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* General Layout Adjustments */
   .main-content {
     flex-direction: column;
+    margin: 10px;
+    gap: 10px;
   }
+
   .sidebar,
   .product-grid {
     width: 100%;
   }
+
+  /* Navbar Adjustments */
+  .navbar {
+    padding: 10px;
+  }
+
   .nav-container {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center; /* Center align for better mobile fit */
+    gap: 5px; /* Reduce gap further */
+    width: 100%; /* Ensure full width */
   }
+
   .nav-links {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center; /* Center align nav items */
+    width: 100%; /* Full width for nav items */
+    margin: 0; /* Remove any margin */
   }
+
   .nav-links li {
-    margin: 10px 0;
+    margin: 5px 0;
+    width: 100%; /* Full width for each item */
+    text-align: center; /* Center text */
   }
+
+  .nav-links a {
+    width: 100%; /* Ensure links take full width */
+    padding: 5px; /* Reduce padding */
+    font-size: 14px; /* Smaller font */
+  }
+
   .search-bar {
-    margin-top: 10px;
+    margin-top: 5px;
+    width: 100%; /* Full width */
+    justify-content: center; /* Center the search bar */
   }
+
+  #search-input {
+    width: 80%; /* Slightly less than full width for button */
+    font-size: 12px;
+    padding: 6px; /* Reduce padding */
+  }
+
+  #search-button {
+    padding: 6px 8px; /* Reduce padding */
+    font-size: 12px;
+  }
+
   .cart-icon {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 0;
+    text-align: center; /* Center the cart icon */
+    width: 100%; /* Full width */
   }
+
+  .cart-icon a {
+    font-size: 16px; /* Adjust icon size */
+  }
+
+  /* Sidebar Adjustments */
+  .sidebar {
+    max-height: 250px; /* Reduce max height for mobile */
+    padding: 10px;
+    overflow-y: auto; /* Keep scrolling */
+    box-sizing: border-box; /* Include padding in height */
+  }
+
+  .sidebar h3 {
+    font-size: 16px; /* Smaller heading */
+    margin-bottom: 5px; /* Reduce margin */
+  }
+
+  .sidebar ul {
+    padding: 0;
+  }
+
+  .sidebar a {
+    padding: 5px 0;
+    font-size: 12px; /* Smaller font */
+    display: block; /* Ensure full width */
+    text-align: center; /* Center align links */
+  }
+
+  /* Product Grid Adjustments (unchanged but included for context) */
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    grid-auto-rows: 300px;
+  }
+
+  .product-card {
+    height: 300px;
+    max-height: 300px;
+    padding: 10px;
+  }
+
+  .product-card img {
+    max-height: 150px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+    min-height: 36px;
+    -webkit-line-clamp: 2;
+  }
+
+  .product-card p {
+    font-size: 14px;
+  }
+
+  .add-to-cart {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Other Adjustments (unchanged but included for completeness) */
   .product-container {
     flex-direction: column;
   }
+
   .product-image,
   .product-info {
     width: 100%;
   }
+
   .cart-table {
-    font-size: 14px;
+    font-size: 12px;
   }
+
   .cart-table th,
   .cart-table td {
-    padding: 8px;
+    padding: 5px;
   }
+
   .quantity-controls input {
-    width: 40px;
+    width: 30px;
+    font-size: 12px;
   }
+
+  .quantity-controls button {
+    padding: 3px 8px;
+  }
+
+  .remove-button {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
   .cart-total,
   .cart-actions {
     text-align: center;
   }
+
   .cart-actions {
     flex-direction: column;
     gap: 10px;
   }
-  .checkout-button,
+
+  #checkout-button,
   #empty-cart-button {
     width: 100%;
     max-width: 200px;
+    padding: 8px;
+    font-size: 14px;
   }
+
   .checkout-container {
     flex-direction: column;
   }
+
   .checkout-form,
   .order-summary {
     width: 100%;
   }
+
+  .checkout-form h3,
+  .order-summary h3 {
+    font-size: 18px;
+  }
+
+  #checkout-form .form-group input {
+    font-size: 12px;
+  }
+
+  #pay-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .summary-table th,
+  .summary-table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+
   .profile-container {
     flex-direction: column;
   }
+
   .user-info,
   .order-history {
     width: 100%;
   }
-  .orders-table {
+
+  .user-info h3,
+  .order-history h3 {
+    font-size: 18px;
+  }
+
+  .user-info p {
     font-size: 14px;
   }
+
+  .orders-table {
+    font-size: 12px;
+  }
+
   .orders-table th,
   .orders-table td {
-    padding: 8px;
+    padding: 5px;
+  }
+
+  .toggle-items {
+    font-size: 12px;
+  }
+
+  .items-details-table th,
+  .items-details-table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .welcome-banner {
+    padding: 20px 10px;
+  }
+
+  .welcome-banner h2 {
+    font-size: 24px;
+  }
+
+  .welcome-banner p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel-slide img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    font-size: 12px;
+    padding: 5px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .carousel-prev,
+  .carousel-next {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
   }
 }
